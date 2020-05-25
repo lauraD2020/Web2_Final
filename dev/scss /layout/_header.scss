@@ -2,5 +2,57 @@
     Header
 ============= */
 #header{
-    
+    background-color: $white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    >div{ 
+        display: grid;
+        grid-template-areas: "logo burger"
+                            "nav nav";
+        grid-template-columns: 80% auto;
+
+        #logo-container{
+            grid-area: logo;
+            padding: 20px;
+        }
+
+        #burger-container{
+            display: flex;
+            align-items: center;
+            grid-area: burger;
+            justify-content: flex-end;
+            padding: 30px;
+
+            @include lg{
+                display: none !important;
+            }
+            i{
+                cursor: pointer;
+
+            }
+        }
+
+        #nav-container{
+            grid-area: nav;
+            display: none;
+            padding: 10px;
+            background-color: $black;
+
+            @include lg{
+                display: block !important;
+            }
+        }
+
+        section{
+            h1{
+                color: $white;
+            }
+            i{
+                color: $blue;
+            }
+        }
+    }
 }

@@ -343,7 +343,7 @@ ul {
     Typography
 ============= */
 body {
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: 'Ubuntu', sans-serif; }
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -398,17 +398,61 @@ textarea {
       font-size: 1.125rem; }
     #nav-container ul li a:hover,
     #nav-container ul li a:active {
-      color: #870000; }
+      color: #B41F15; }
 
 /* =============
     Header
 ============= */
+#header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  #header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: 80% auto; }
+    #header > div #logo-container {
+      grid-area: logo;
+      padding: 20px; }
+    #header > div #burger-container {
+      display: flex;
+      align-items: center;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 30px; }
+      @media (min-width: 992px) {
+        #header > div #burger-container {
+          display: none !important; } }
+      #header > div #burger-container i {
+        cursor: pointer; }
+    #header > div #nav-container {
+      grid-area: nav;
+      display: none;
+      padding: 10px;
+      background-color: #000; }
+      @media (min-width: 992px) {
+        #header > div #nav-container {
+          display: block !important; } }
+    #header > div section h1 {
+      color: #fff; }
+    #header > div section i {
+      color: #01568C; }
+
 /* =============
     Footer
 ============= */
 /* =============
     Section 1
 ============= */
+#section-1 {
+  background-image: url("../img/section-1/hero.jpg");
+  height: 690px;
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+
 /* =============
     Section 2
 ============= */

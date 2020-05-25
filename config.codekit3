@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "0EDE13B4-C3B4-4B0C-AF8E-B2C1440326B9"
+		"uuidString": "0C045382-0887-453B-9A27-6B8B45294170"
 		}
 	],
 "creatorBuild": "32001",
@@ -18,6 +18,160 @@
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/deploy/img/header/Logo.png": {
+		"ft": 32768,
+		"iS": 108061,
+		"oA": 1,
+		"oAP": "/deploy/img/header/Logo.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-1/hero.jpg": {
+		"ft": 16384,
+		"iS": 244461,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-2/car.jpg": {
+		"ft": 16384,
+		"iS": 224904,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-2/car.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/blur.jpg": {
+		"ft": 16384,
+		"iS": 46522,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-3/blur.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/confetti.jpg": {
+		"ft": 16384,
+		"iS": 72449,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-3/confetti.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/trophy.jpg": {
+		"ft": 16384,
+		"iS": 148671,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-3/trophy.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/americanair.jpg": {
+		"ft": 16384,
+		"iS": 23253,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-4/americanair.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/delta.jpg": {
+		"ft": 16384,
+		"iS": 26521,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-4/delta.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/hardrock.jpg": {
+		"ft": 16384,
+		"iS": 45868,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-4/hardrock.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/oceanside.jpg": {
+		"ft": 16384,
+		"iS": 43097,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-4/oceanside.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/seaside.jpg": {
+		"ft": 16384,
+		"iS": 51660,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-4/seaside.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/spirit.jpg": {
+		"ft": 16384,
+		"iS": 23993,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-4/spirit.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/history1.jpg": {
+		"ft": 16384,
+		"iS": 133831,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-5/history1.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/history2.jpg": {
+		"ft": 16384,
+		"iS": 65640,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/deploy/img/section-5/history2.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/deploy/index.html": {
 		"cB": 0,
@@ -71,7 +225,7 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/index.html",
-		"oF": 3
+		"oF": 2
 		},
 	"/dev/js/scripts-min.js": {
 		"bF": 0,
@@ -81,7 +235,7 @@
 		"oA": 0,
 		"oAP": "/dev/js/scripts-min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/dev/js/scripts.js": {
@@ -91,7 +245,7 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
-		"oF": 3,
+		"oF": 2,
 		"sC": 0,
 		"tS": 0
 		},
@@ -349,10 +503,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 611782867.48514605,
+	"creationDate": 611177767.44133306,
 	"displayValue": "Web2_Final",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets-azure",
+	"iconImageName": "brackets-slime",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {

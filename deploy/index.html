@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>   
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -15,33 +17,53 @@
 
 <body>
     <header id="header">
-        
+        <div>
+            <section id="logo-container">
+                <img alt="DAYTONA 500 Logo 2021">
+            </section>
+    
+            <section id="burger-container">
+                <i class="fas fa-bars" id="burger-icon"></i>
+            </section>
+    
+            <nav id="nav-container" data-nav="main-navigation">
+                <ul>
+                    <li><a href="#section-1">HOME</a></li>
+                    <li><a href="#section-2">NEWS</a></li>
+                    <li><a href="#section-3">2020 WINNER</a></li>
+                    <li><a href="#section-4">PLAN YOUR VISIT</a></li>
+                    <li><a href="#section-5">HISTORY</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section id="section-1">
             <div>
                 <h1>2021 DAYTONA 500</h1>
                 <h2>BUY TICKETS TODAY</h2>
                 <h4>FEBRUARY 14TH 2021</h4>
-                <img alt= photo of the stands of fans from the track>
+                <img src="img/section-1/hero.jpg" alt="photo of the stands of fans from the track">
             </div>
         </section>
     <section id="section-2">
                 <h2>NEWS</h2>
             
                 <div>
-                    <img alt= close up view of cars on track moving towards camera>
+                    <img alt= "close up view of cars on track moving towards camera">
                     <p>Check out a close up of the action with our</p>
                     <p>TRACK CAM brought to you by Toyota!</p>
                     <p>Highlights of our action packed 2020 Daytona 500 are now available</p>
                 </div>
             
-            
-                <img class="mySlides" src="img_snowtops.jpg">
-                <img class="mySlides" src="img_lights.jpg">
-                <img class="mySlides" src="img_mountains.jpg">
-                <img class="mySlides" src="img_forest.jpg">
-                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                <section>
+                    <img class="mySlides" src="img_snowtops.jpg">
+                    <img class="mySlides" src="img_lights.jpg">
+                    <img class="mySlides" src="img_mountains.jpg">
+                    <img class="mySlides" src="img_forest.jpg">
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </section>
+                
             </section>
     <section id="section-3"> 
                     <h2>2020 WINNER SPOTLIGHT</h2>
@@ -62,17 +84,35 @@
                 </section>
                 
     <section id="section-4"> 
-                        <div class="MagicScroll" data-options="width: 640; items: 3; step: 2;">
-                            <img src="example1.jpg" />
-                            <img src="example2.jpg" />
-                        </div>
+                        <h2>PLAN YOUR VISIT</h2>
+                        <h3>Stay Close to the Action!</h3>
+                        <h3>Book Your Flight Today!</h3>
                     </section>
                     
     <section id="section-5">
-                         
+                            <div>
+                                <img src="img/section-5/history1.jpg" alt="old timey photo of cars at Daytona">
+                                <h2>HISTORY MADE IN DAYTONA</h2>
+                                <p>The Daytona 500 was first run in 1959, but its roots can be traced all the way back to 1903. That was the year some hardy sorts decided that the level, hard-packed sands of Ormond Beach, Florida, would be a perfect place to see how fast a race car could run. From there, beach racing in the Daytona area became a hit.</p>
+                                <p>A mechanic named France founded NASCAR (the National Association of Stock Car Auto Racing) and began to bring order to what previously had been an untamed sport. Since France lived in Daytona and his big track also was located there, it made sense to have NASCAR headquartered in the Florida town, too.</p>
+                            </div>
+                        
+                            <div>
+                                <img alt="beach race from the old days">
+                                <p>Daytona has proven to be an ideal site for the nerve center of NASCAR. The Daytona 500 opens the NASCAR season each February, a time of year when many other tracks around the country are paved in ice and snow. Daytona offers race fans a chance to escape the winter and soak up some sun, surf, and speed. Approximately 200,000 fans make the Daytona 500 an annual sellout.</p>
+                                <p>Daytona International Speedway hosts a second NASCAR race each year during the Fourth of July weekend. But even though it's on the same track and has the same cars and drivers, it's not the same race. There are other horse races at Churchill Downs, but there's only one Kentucky Derby. The same logic applies to Daytona.</p>
+                                <p>"For a race driver, when you drive through that tunnel and into the infield at Daytona, it's like you've entered the gates of heaven," says 1989 Daytona 500 winner Darrell Waltrip. "If you roll onto the track at Daytona and don't get goose bumps, buddy, you ain't a racer."</p>
+                            </div>
                         </section>
     <footer>
-                                <p> &copy;2020</p> 
+                                <h3>TICKETS? QUESTIONS?</h3>
+                                <h3>CALL 1-800-PIT-SHOP</h3>
+                                <div>
+                                    <p>
+                                        social media icons will go here
+                                    </p>
+                                </div>
+                                <p> &copy;Daytona International Speedway 2020</p> 
                             </footer>
 
 
