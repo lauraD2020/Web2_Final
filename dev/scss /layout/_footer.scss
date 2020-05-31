@@ -2,5 +2,25 @@
     Footer
 ============= */
 footer{
- 
+ background-color: $blue;
+ color: $white;
+ text-align: center;
+
+    h3{
+        padding-top: 10px;
+        font-size: 30px;
+    }
+    h4{
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    img{
+        padding:20px
+    }
+
+    p{
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
 }

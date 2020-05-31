@@ -393,7 +393,7 @@ textarea {
         display: flex; } }
     #nav-container ul li a:link,
     #nav-container ul li a:visited {
-      color: #fff;
+      color: #01568C;
       text-decoration: none;
       font-size: 1.125rem; }
     #nav-container ul li a:hover,
@@ -415,14 +415,22 @@ textarea {
     grid-template-columns: 80% auto; }
     #header > div #logo-container {
       grid-area: logo;
-      padding: 20px; }
+      padding: 20px;
+      margin-left: 20px; }
+      #header > div #logo-container img {
+        height: 100px; }
+      @media (min-width: 992px) {
+        #header > div #logo-container {
+          margin-left: 50px; } }
     #header > div #burger-container {
       display: flex;
       align-items: center;
       grid-area: burger;
       justify-content: flex-end;
-      padding: 30px; }
-      @media (min-width: 992px) {
+      padding: 30px;
+      margin-top: 70px;
+      color: #01568C; }
+      @media (min-width: 768px) {
         #header > div #burger-container {
           display: none !important; } }
       #header > div #burger-container i {
@@ -431,37 +439,186 @@ textarea {
       grid-area: nav;
       display: none;
       padding: 10px;
-      background-color: #000; }
+      background-color: #fff; }
       @media (min-width: 992px) {
         #header > div #nav-container {
           display: block !important; } }
-    #header > div section h1 {
-      color: #fff; }
-    #header > div section i {
-      color: #01568C; }
-
+  #header body {
+    background: #f2f2f2; }
+  #header .search {
+    width: 100%;
+    position: relative;
+    display: flex; }
+  #header .searchTerm {
+    width: 100%;
+    border: 3px solid #B41F15;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #B41F15; }
+  #header .searchTerm:focus {
+    color: #B41F15; }
+  #header .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #B41F15;
+    background: #B41F15;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px; }
+  #header .wrap {
+    width: 150px;
+    position: absolute;
+    top: 40px;
+    right: 20px; }
+    @media (min-width: 768px) {
+      #header .wrap {
+        width: 200px; } }
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #01568C;
+  color: #fff;
+  text-align: center; }
+  footer h3 {
+    padding-top: 10px;
+    font-size: 30px; }
+  footer h4 {
+    padding: 10px;
+    font-size: 25px; }
+  footer img {
+    padding: 20px; }
+  footer p {
+    font-size: 10px;
+    padding-bottom: 20px; }
+
 /* =============
     Section 1
 ============= */
 #section-1 {
   background-image: url("../img/section-1/hero.jpg");
-  height: 690px;
+  height: 780px;
   background-size: cover;
   background-position: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  color: #fff;
   text-align: center; }
-
+  #section-1 h1 {
+    padding-top: 200px;
+    font-size: 50px;
+    margin: 60px;
+    padding-bottom: 40px; }
+    @media (min-width: 768px) {
+      #section-1 h1 {
+        padding-top: 250px;
+        font-size: 70px; } }
+    @media (min-width: 992px) {
+      #section-1 h1 {
+        font-size: 80px; } }
+  #section-1 h4 {
+    padding-top: 20px;
+    font-size: 25px; }
+    @media (min-width: 768px) {
+      #section-1 h4 {
+        font-size: 30px; } }
 /* =============
     Section 2
 ============= */
 /* =============
     Section 3
 ============= */
+#section-3 {
+  padding-bottom: 40px; }
+  @media (min-width: 1200px) {
+    #section-3 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-3 ."; } }
+  #section-3 h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #01568C; }
+  #section-3 ul {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 296px); }
+    @media (min-width: 768px) {
+      #section-3 ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 340px);
+        grid-template-areas: "trophy trophy" "trophy trophy" "confetti blur"; } }
+    #section-3 ul li {
+      background-position: center;
+      background-size: cover; }
+    @media (min-width: 768px) {
+      #section-3 ul #trophy {
+        grid-area: trophy;
+        background-position: center top; } }
+    @media (min-width: 768px) {
+      #section-3 ul #confetti {
+        grid-area: confetti; } }
+    @media (min-width: 768px) {
+      #section-3 ul #blur {
+        grid-area: blur;
+        margin-left: 400px; } }
+  #section-3 div {
+    padding-top: 30px; }
+
 /* =============
     Section 4
 ============= */
+#section-4 {
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #335971; }
+  #section-4 h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #6CC5F2;
+    font-size: 39px; }
+    @media (min-width: 768px) {
+      #section-4 h2 {
+        font-size: 50px; } }
+    @media (min-width: 992px) {
+      #section-4 h2 {
+        font-size: 60px; } }
+  #section-4 h3 {
+    color: #fff;
+    font-size: 28px;
+    padding: 20px; }
+  #section-4 div figure {
+    display: inline-block;
+    padding: 20px; }
+    @media (min-width: 768px) {
+      #section-4 div figure {
+        padding: 40px; } }
+    @media (min-width: 992px) {
+      #section-4 div figure {
+        padding: 30px; } }
+  #section-4 div figcaption {
+    text-align: center;
+    background-color: #fff;
+    margin-top: -4px;
+    padding-top: 10px; }
+    #section-4 div figcaption h1 {
+      font-size: 26px;
+      padding: 20px; }
+    #section-4 div figcaption h4 {
+      font-size: 12px; }
+    #section-4 div figcaption p {
+      font-size: 12px;
+      color: #B41F15;
+      padding: 20px; }
+
 /* =============
     Section 5
 ============= */
+#section-5 h2 {
+  color: #6CC5F2; }

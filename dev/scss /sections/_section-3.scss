@@ -2,6 +2,65 @@
     Section 3
 ============= */
 #section-3{
+   padding-bottom: 40px;
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-3 .";
+    }
 
+    h2{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        color: $blue;
+    }
+    ul{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: repeat(3, 296px);
+
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 340px);
+            grid-template-areas: 
+            "trophy trophy"
+            "trophy trophy"
+            "confetti blur";
+        }
+
+        li{
+            background-position: center;
+            background-size: cover;
+        }
+
+        #trophy{
+
+            @include md{
+                grid-area: trophy;
+                background-position: center top;
+            }
+        }
+
+        #confetti{
+
+            @include md{
+                grid-area: confetti;
+                
+            }
+        }
+
+        #blur{
+            @include md{
+                grid-area: blur;
+                margin-left: 400px;
+            }
+        }
+
+    }
+
+    div{
+        padding-top: 30px;
+    }
    
 }

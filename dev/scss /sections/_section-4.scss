@@ -2,6 +2,71 @@
     Section 4
 ============= */
 #section-4{
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: $bgblue;
 
-   
+    h2{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        color: $lightblue;
+        font-size: 39px;
+
+        @include md{
+            font-size: 50px;
+        }
+        @include lg{
+            font-size: 60px;
+        }
+    }
+
+    h3{
+        color: $white; 
+        font-size: 28px;
+        padding: 20px;
+      
+    }
+    
+    div{
+       
+        figure {
+            display:inline-block;
+            padding: 20px;
+
+            @include md{
+                padding: 40px
+            }
+            @include lg{
+                padding: 30px
+            }
+
+        }
+        figcaption {
+            text-align: center;
+            background-color: $white;
+            margin-top: -4px;
+            padding-top: 10px;
+            
+           
+            h1{
+                font-size: 26px;
+                padding: 20px;
+            }
+            h4{
+                font-size: 12px;
+
+            }
+            p{
+                font-size: 12px;
+                color: $red;
+                padding: 20px;
+            }
+            
+           
+            
+        }
+    }
+    
+
+    
 }

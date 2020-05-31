@@ -7,7 +7,33 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-
-   
+    background-repeat: no-repeat;
+    color: $white;
+    text-align: center;
     
+   
+    h1{
+        padding-top: 200px;
+        font-size: 50px;
+        margin: 60px;
+        padding-bottom: 40px;
+
+        @include md{
+            padding-top: 250px;
+            font-size: 70px;
+        }
+        @include lg{
+            font-size: 80px;
+        }
+    }
+
+    h4{
+       padding-top: 20px;
+       font-size: 25px;
+
+       @include md{
+           font-size: 30px;
+       }
+   }
+   
 }

@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "0C045382-0887-453B-9A27-6B8B45294170"
+		"uuidString": "565F9A1C-FB47-4967-97C6-47CDC5B193DD"
 		}
 	],
 "creatorBuild": "32001",
@@ -19,12 +19,34 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/footer/social.png": {
+		"ft": 32768,
+		"iS": 4089,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/social.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/header/Logo.png": {
 		"ft": 32768,
 		"iS": 108061,
 		"oA": 1,
 		"oAP": "/deploy/img/header/Logo.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-1/button.png": {
+		"ft": 32768,
+		"iS": 8006,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/button.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
@@ -48,6 +70,28 @@
 		"oA": 1,
 		"oAP": "/deploy/img/section-2/car.jpg",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-2/fame.png": {
+		"ft": 32768,
+		"iS": 1159011,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/fame.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-2/pitcrew.jpg": {
+		"ft": 16384,
+		"iS": 390702,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/pitcrew.jpg",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
@@ -200,7 +244,7 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/dev/footer.kit": {
@@ -220,7 +264,7 @@
 		"oF": 0
 		},
 	"/dev/index.kit": {
-		"cB": 0,
+		"cB": 1,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -453,7 +497,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/deploy/css/styles.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		},
@@ -503,10 +547,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 611177767.44133306,
+	"creationDate": 609282089.60785699,
 	"displayValue": "Web2_Final",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets-slime",
+	"iconImageName": "brackets-cafe",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
