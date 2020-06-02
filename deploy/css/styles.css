@@ -528,8 +528,34 @@ footer {
       #section-1 h4 {
         font-size: 30px; } }
 /* =============
-    Section 2
+    slick
 ============= */
+#slick {
+  display: grid;
+  grid-template-columns: 2vw 96vw 2vw;
+  grid-template-areas: ". slick .";
+  overflow: hidden;
+  padding-top: 100px; }
+  @media (min-width: 768px) {
+    #slick {
+      grid-template-columns: auto 80% auto; } }
+  @media (min-width: 992px) {
+    #slick {
+      grid-template-columns: auto 70% auto; } }
+  @media (min-width: 1200px) {
+    #slick {
+      grid-template-columns: auto 60% auto; } }
+  #slick > div {
+    grid-area: slick; }
+    #slick > div .slick-prev:before, #slick > div .slick-next:before {
+      color: #000; }
+    #slick > div #slide-1 img {
+      width: 100%; }
+    #slick > div #slide-2 img {
+      width: 100%; }
+    #slick > div #slide-3 img {
+      width: 100%; }
+
 /* =============
     Section 3
 ============= */

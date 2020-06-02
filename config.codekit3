@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "565F9A1C-FB47-4967-97C6-47CDC5B193DD"
+		"uuidString": "C58914CF-A57F-40CA-A729-52530ED631A5"
 		}
 	],
 "creatorBuild": "32001",
@@ -244,7 +244,7 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min-min.js",
 		"oF": 0,
-		"sC": 0,
+		"sC": 3,
 		"tS": 0
 		},
 	"/dev/footer.kit": {
@@ -264,7 +264,7 @@
 		"oF": 0
 		},
 	"/dev/index.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
@@ -278,7 +278,7 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/dev/js/scripts-min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
@@ -289,7 +289,7 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
-		"oF": 2,
+		"oF": 3,
 		"sC": 0,
 		"tS": 0
 		},
@@ -547,7 +547,7 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 609282089.60785699,
+	"creationDate": 612366554.22253895,
 	"displayValue": "Web2_Final",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-cafe",
