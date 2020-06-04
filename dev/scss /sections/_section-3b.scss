@@ -1,0 +1,47 @@
+/* =============
+    Section 3b
+============= */
+#section-3b{
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-3b .";
+    }
+
+padding: 30px;
+
+    >div{
+        grid-area: section-3b;
+        p{
+            text-align: left;
+            padding: 30px;
+            line-height: 30px;
+        }
+    
+        h4{
+            color: $blue;
+            text-align: center;
+            font-size: 30px;
+            border-top: 3px solid $lightblue;
+            border-bottom: 3px solid $lightblue;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+    
+        }
+        h3{
+            color: $lightblue;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            @include md{
+                margin-top: 0px;
+            }
+        }
+    }
+    
+    
+   
+}

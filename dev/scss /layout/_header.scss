@@ -4,7 +4,6 @@
 #header{
     background-color: $white;
     left: 0;
-    position: fixed;
     top: 0;
     width: 100%;
 
@@ -50,7 +49,12 @@
             grid-area: nav;
             display: none;
             padding: 10px;
-            background-color: $white;
+            background-color: $bgblue;
+
+            @include md{
+                background-color: $white;
+
+            }
         
 
             @include lg{

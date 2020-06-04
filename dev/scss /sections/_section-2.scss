@@ -2,13 +2,11 @@
     slick
 ============= */
 #slick{
-    
+
     display: grid;
     grid-template-columns: 2vw 96vw 2vw;
-    // grid-template-columns: 10px auto 10px;
     grid-template-areas: ". slick .";
     overflow: hidden;
-    // background-color: $bg-color;
     padding-top: 100px;
 
     @include md{
@@ -27,7 +25,7 @@
         grid-area: slick;
 
         .slick-prev:before, .slick-next:before{
-            color: $black;
+            color: $blue;
         }
 
 
@@ -48,32 +46,6 @@
             }
         }
 
-        // #slide-2{
-
-          
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-
-        //     h1{
-        //         font-size:rem-calc(40);
-        //         color: $white;
-        //         font-weight: 300;
-
-        //     }
-
-        // }
-
-        // #slide-3{
-        //     display: grid;
-        //     grid-template-columns: (1,1fr);
-        //     @include md{
-        //         grid-template-columns: 40% auto;
-        //     }
-        
-
-            
-        // }
     }
-    
+
 }

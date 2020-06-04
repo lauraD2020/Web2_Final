@@ -24,9 +24,13 @@
 
             a:link,
             a:visited {
-                color: $blue;
+                color: $white;
                 text-decoration: none;
                 font-size: rem-calc(18px);
+                @include md{
+                    color: $blue;
+
+                }
             }
 
             a:hover,
@@ -35,4 +39,23 @@
             }
         }
     }
+}
+
+#top {
+    position: fixed;
+    bottom: 15px;
+    float: right;
+    margin-left: 90%;
+    text-decoration: none;
+    font-size: 12px;
+    border-color: $blue;
+    opacity: 70%;
+    background-color:$blue;
+    border-radius: 4px;
+
+}
+#top:hover {
+    background-color:$blue;
+    opacity: 100%;
+
 }

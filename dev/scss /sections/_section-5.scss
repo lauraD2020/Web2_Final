@@ -2,9 +2,41 @@
     Section 5
 ============= */
 #section-5{
- 
-    h2{
-        color: $lightblue;
+
+    max-width: 890px;
+    margin: 0 auto !important; 
+	float: none !important;
+    padding-top: 40px;
+
+    p{
+        text-align: left;
+        padding: 10px;
+        line-height: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 15px;
     }
+
+    img { 
+        float: left;  
+        margin-left: 10px;
+        margin-right: 20px;
+    } 
+
+    #image2{
+        img{
+            float: left;
+            margin-right: 60px;
+            margin-left: 40px;
+            padding-bottom: 10px;
+            @include md{
+                margin-right: 20px;
+                margin-left: 9px;
+                padding-bottom: 0px;
+
+            }
+        }
+    }
+   
 }
    

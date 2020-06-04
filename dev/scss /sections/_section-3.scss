@@ -2,65 +2,76 @@
     Section 3
 ============= */
 #section-3{
-   padding-bottom: 40px;
+
+   
+    h2{
+        text-align: center;
+        padding: 70px;
+        color: $blue;
+
+        @include lg{
+            
+        }
+
+    }
+
+
     @include xl{
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-3 .";
-    }
+    }   
 
-    h2{
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        color: $blue;
-    }
-    ul{
-        display: grid;
-        grid-gap: 10px;
-        grid-template-rows: repeat(3, 296px);
+    >div{
+        grid-area: section-3;
 
-        @include md{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 340px);
-            grid-template-areas: 
-            "trophy trophy"
-            "trophy trophy"
-            "confetti blur";
-        }
-
-        li{
-            background-position: center;
-            background-size: cover;
-        }
-
-        #trophy{
-
+        ul{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: repeat(1, 296px);
+    
             @include md{
-                grid-area: trophy;
-                background-position: center top;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 295px);
+                grid-template-areas: 
+                "trophy trophy confetti"
+                "trophy trophy blur";
             }
-        }
+            
+            li{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+    
+            #trophy{
+                background-image: url('../img/section-3/trophy.jpg');
+                height: 370px;
 
-        #confetti{
-
-            @include md{
-                grid-area: confetti;
+                @include md{
+                    grid-area: trophy;
+                    background-position: center top;
+                    height: 600px
+                }
                 
             }
-        }
-
-        #blur{
-            @include md{
-                grid-area: blur;
-                margin-left: 400px;
+    
+            #confetti{
+                background-image: url('../img/section-3/confetti.jpg');
+                @include md{
+                    grid-area: confetti;
+                    
+                }
             }
+    
+            #blur{
+                background-image: url('../img/section-3/blur.jpg');
+
+                @include md{
+                    grid-area: blur;
+                }
+            }
+    
         }
-
     }
-
-    div{
-        padding-top: 30px;
-    }
-   
 }

@@ -393,12 +393,32 @@ textarea {
         display: flex; } }
     #nav-container ul li a:link,
     #nav-container ul li a:visited {
-      color: #01568C;
+      color: #fff;
       text-decoration: none;
       font-size: 1.125rem; }
+      @media (min-width: 768px) {
+        #nav-container ul li a:link,
+        #nav-container ul li a:visited {
+          color: #01568C; } }
     #nav-container ul li a:hover,
     #nav-container ul li a:active {
       color: #B41F15; }
+
+#top {
+  position: fixed;
+  bottom: 15px;
+  float: right;
+  margin-left: 90%;
+  text-decoration: none;
+  font-size: 12px;
+  border-color: #01568C;
+  opacity: 70%;
+  background-color: #01568C;
+  border-radius: 4px; }
+
+#top:hover {
+  background-color: #01568C;
+  opacity: 100%; }
 
 /* =============
     Header
@@ -406,7 +426,6 @@ textarea {
 #header {
   background-color: #fff;
   left: 0;
-  position: fixed;
   top: 0;
   width: 100%; }
   #header > div {
@@ -439,7 +458,10 @@ textarea {
       grid-area: nav;
       display: none;
       padding: 10px;
-      background-color: #fff; }
+      background-color: #335971; }
+      @media (min-width: 768px) {
+        #header > div #nav-container {
+          background-color: #fff; } }
       @media (min-width: 992px) {
         #header > div #nav-container {
           display: block !important; } }
@@ -527,6 +549,16 @@ footer {
     @media (min-width: 768px) {
       #section-1 h4 {
         font-size: 30px; } }
+  #section-1 h2 {
+    padding-top: 290px;
+    color: #01568C;
+    font-size: 35px; }
+    @media (min-width: 768px) {
+      #section-1 h2 {
+        padding-top: 270px; } }
+    @media (min-width: 992px) {
+      #section-1 h2 {
+        padding-top: 260px; } }
 /* =============
     slick
 ============= */
@@ -548,7 +580,7 @@ footer {
   #slick > div {
     grid-area: slick; }
     #slick > div .slick-prev:before, #slick > div .slick-next:before {
-      color: #000; }
+      color: #01568C; }
     #slick > div #slide-1 img {
       width: 100%; }
     #slick > div #slide-2 img {
@@ -559,44 +591,84 @@ footer {
 /* =============
     Section 3
 ============= */
-#section-3 {
-  padding-bottom: 40px; }
-  @media (min-width: 1200px) {
-    #section-3 {
-      display: grid;
-      grid-template-columns: auto 1200px auto;
-      grid-template-areas: ". section-3 ."; } }
-  #section-3 h2 {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    color: #01568C; }
-  #section-3 ul {
+#section-3 h2 {
+  text-align: center;
+  padding: 70px;
+  color: #01568C; }
+
+@media (min-width: 1200px) {
+  #section-3 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-3 ."; } }
+
+#section-3 > div {
+  grid-area: section-3; }
+  #section-3 > div ul {
     display: grid;
     grid-gap: 10px;
-    grid-template-rows: repeat(3, 296px); }
+    grid-template-rows: repeat(1, 296px); }
     @media (min-width: 768px) {
-      #section-3 ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 340px);
-        grid-template-areas: "trophy trophy" "trophy trophy" "confetti blur"; } }
-    #section-3 ul li {
+      #section-3 > div ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 295px);
+        grid-template-areas: "trophy trophy confetti" "trophy trophy blur"; } }
+    #section-3 > div ul li {
       background-position: center;
-      background-size: cover; }
-    @media (min-width: 768px) {
-      #section-3 ul #trophy {
-        grid-area: trophy;
-        background-position: center top; } }
-    @media (min-width: 768px) {
-      #section-3 ul #confetti {
-        grid-area: confetti; } }
-    @media (min-width: 768px) {
-      #section-3 ul #blur {
-        grid-area: blur;
-        margin-left: 400px; } }
-  #section-3 div {
-    padding-top: 30px; }
-
+      background-size: cover;
+      background-repeat: no-repeat; }
+    #section-3 > div ul #trophy {
+      background-image: url("../img/section-3/trophy.jpg");
+      height: 370px; }
+      @media (min-width: 768px) {
+        #section-3 > div ul #trophy {
+          grid-area: trophy;
+          background-position: center top;
+          height: 600px; } }
+    #section-3 > div ul #confetti {
+      background-image: url("../img/section-3/confetti.jpg"); }
+      @media (min-width: 768px) {
+        #section-3 > div ul #confetti {
+          grid-area: confetti; } }
+    #section-3 > div ul #blur {
+      background-image: url("../img/section-3/blur.jpg"); }
+      @media (min-width: 768px) {
+        #section-3 > div ul #blur {
+          grid-area: blur; } }
+/* =============
+    Section 3b
+============= */
+#section-3b {
+  padding: 30px; }
+  @media (min-width: 1200px) {
+    #section-3b {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-3b ."; } }
+  #section-3b > div {
+    grid-area: section-3b; }
+    #section-3b > div p {
+      text-align: left;
+      padding: 30px;
+      line-height: 30px; }
+    #section-3b > div h4 {
+      color: #01568C;
+      text-align: center;
+      font-size: 30px;
+      border-top: 3px solid #6CC5F2;
+      border-bottom: 3px solid #6CC5F2;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+    #section-3b > div h3 {
+      color: #6CC5F2;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 50px; }
+      @media (min-width: 768px) {
+        #section-3b > div h3 {
+          margin-top: 0px; } }
 /* =============
     Section 4
 ============= */
@@ -646,5 +718,29 @@ footer {
 /* =============
     Section 5
 ============= */
-#section-5 h2 {
-  color: #6CC5F2; }
+#section-5 {
+  max-width: 890px;
+  margin: 0 auto !important;
+  float: none !important;
+  padding-top: 40px; }
+  #section-5 p {
+    text-align: left;
+    padding: 10px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px; }
+  #section-5 img {
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px; }
+  #section-5 #image2 img {
+    float: left;
+    margin-right: 60px;
+    margin-left: 40px;
+    padding-bottom: 10px; }
+    @media (min-width: 768px) {
+      #section-5 #image2 img {
+        margin-right: 20px;
+        margin-left: 9px;
+        padding-bottom: 0px; } }
