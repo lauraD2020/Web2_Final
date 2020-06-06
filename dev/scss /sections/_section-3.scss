@@ -6,25 +6,20 @@
    
     h2{
         text-align: center;
-        padding: 70px;
+        padding: 50px;
         color: $blue;
-
-        @include lg{
-            
-        }
+        font-size: 30px;
 
     }
-
-
-    @include xl{
-        display: grid;
-        grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". section-3 .";
-    }   
+  
 
     >div{
         grid-area: section-3;
 
+        @include lg{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
         ul{
             display: grid;
             grid-gap: 10px;

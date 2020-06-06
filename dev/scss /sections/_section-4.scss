@@ -46,22 +46,30 @@
             background-color: $white;
             margin-top: -4px;
             padding-top: 10px;
+            padding-bottom: 20px;
             
            
             h1{
                 font-size: 26px;
-                padding: 20px;
+                padding: 10px;
             }
             h4{
                 font-size: 12px;
+                padding-bottom: 10px;
 
             }
-            p{
-                font-size: 12px;
+           
+            a:link,
+            a:visited {
                 color: $red;
-                padding: 20px;
+                text-decoration: none;
+                font-size: rem-calc(12px);
+    
             }
-            
+            a:hover,
+            a:active {
+                color: $blue;
+            }
            
             
         }

@@ -513,11 +513,30 @@ footer {
   footer h4 {
     padding: 10px;
     font-size: 25px; }
-  footer img {
-    padding: 20px; }
+  footer i {
+    font-size: 50px;
+    padding: 10px; }
   footer p {
     font-size: 10px;
     padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    footer {
+      text-align: left;
+      padding-left: 50px;
+      padding-top: 30px;
+      padding-bottom: 20px; }
+      footer div {
+        text-align: right;
+        padding-right: 50px;
+        margin-top: -90px; } }
+  footer a:link,
+  footer a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem; }
+  footer a:hover,
+  footer a:active {
+    color: #6CC5F2; }
 
 /* =============
     Section 1
@@ -581,6 +600,18 @@ footer {
     grid-area: slick; }
     #slick > div .slick-prev:before, #slick > div .slick-next:before {
       color: #01568C; }
+    #slick > div figcaption {
+      text-align: left;
+      background-color: #01568C;
+      color: #fff;
+      padding: 20px; }
+      #slick > div figcaption h4 {
+        padding-bottom: 10px;
+        margin-right: 20px;
+        margin-left: 20px; }
+      #slick > div figcaption p {
+        margin-right: 20px;
+        margin-left: 20px; }
     #slick > div #slide-1 img {
       width: 100%; }
     #slick > div #slide-2 img {
@@ -593,17 +624,16 @@ footer {
 ============= */
 #section-3 h2 {
   text-align: center;
-  padding: 70px;
-  color: #01568C; }
-
-@media (min-width: 1200px) {
-  #section-3 {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-3 ."; } }
+  padding: 50px;
+  color: #01568C;
+  font-size: 30px; }
 
 #section-3 > div {
   grid-area: section-3; }
+  @media (min-width: 992px) {
+    #section-3 > div {
+      margin-left: 10%;
+      margin-right: 10%; } }
   #section-3 > div ul {
     display: grid;
     grid-gap: 10px;
@@ -704,16 +734,22 @@ footer {
     text-align: center;
     background-color: #fff;
     margin-top: -4px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    padding-bottom: 20px; }
     #section-4 div figcaption h1 {
       font-size: 26px;
-      padding: 20px; }
+      padding: 10px; }
     #section-4 div figcaption h4 {
-      font-size: 12px; }
-    #section-4 div figcaption p {
       font-size: 12px;
+      padding-bottom: 10px; }
+    #section-4 div figcaption a:link,
+    #section-4 div figcaption a:visited {
       color: #B41F15;
-      padding: 20px; }
+      text-decoration: none;
+      font-size: 0.75rem; }
+    #section-4 div figcaption a:hover,
+    #section-4 div figcaption a:active {
+      color: #01568C; }
 
 /* =============
     Section 5
